@@ -88,8 +88,7 @@ section{
 
 /*---------- features style start ------*/
 .features{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
     align-items: center;
     gap: 60px;
     margin-left: 80px;
@@ -359,7 +358,9 @@ section{
 
 /*------ responsive style start  -------*/
 @media screen and (max-width: 576px) {
-    main, .header{
+    /*---------- header start ------- */
+    
+    main, .header,.nav-bar,.banner{
         width: 100%;
         margin: auto;
     }
@@ -374,7 +375,50 @@ section{
         gap: 20px;
     }
     .banner-title{
-        font-size: 45px;
+        font-size: 35px;
+    }
+    .banner-description{
+        line-break: auto;
+    }
+    /*---------- header end ------- */
+
+    /*------ features section start ------ */
+    .features{
+        flex-direction: column-reverse;
+        margin: 100px auto auto auto;
+
+    }
+    /*------ features section end ------ */
+
+    /* container start  */
+    .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container button{
+        position: relative;
+        left: 100px;
+        top: 20px;
+    }
+    /* container end  */
+    .facts-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .service{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sponsor{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .sponsor img{
+        height: 100%;
+        width: 100%;
     }
 }
 
