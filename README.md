@@ -1,2 +1,5 @@
-﻿# G3-Architech
- * **Live link:** https://jahangir2k04.github.io/g3-arcitech/
+﻿# G3-Architects
+ * **Live link:** https://g3-architects-web.netlify.app/
+## Used packages/technology
+* HTML
+* CSS
